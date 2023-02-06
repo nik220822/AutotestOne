@@ -10,7 +10,7 @@ class MainKtTest {
         val amount3 = 200.0
         val amount4 = 100_000.0
         val result = calculateFee("MasterCard", amount1, amount3)
-        assertEquals(0.0,result)
+        assertEquals(1.0,result)
     }
 
     @Test
@@ -20,7 +20,7 @@ class MainKtTest {
         val amount3 = 200.0
         val amount4 = 100_000.0
         val result=calculateFee("Maestro", amount2, amount3)
-        assertEquals(0.0,result)
+        assertEquals(1.0,result)
     }
 
     @Test
@@ -30,7 +30,7 @@ class MainKtTest {
         val amount3 = 200.0
         val amount4 = 100_000.0
         val result=calculateFee("VK Pay", amount2, amount3)
-        assertEquals(0.0,result)
+        assertEquals(1.0,result)
     }
 
     @Test
